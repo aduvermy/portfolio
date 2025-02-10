@@ -97,7 +97,7 @@ export const Projects = () => {
                 A Python library to facilitate the development of Python applications. Includes tools to simplify the 
                 development of data science libraries.
               </p>
-              <CardLink href="https://github.com/aduvermy/pypassist" target="_blank" rel="noopener noreferrer">
+              <CardLink href="https://gitlab.com/pypassist/pypassist" target="_blank" rel="noopener noreferrer">
                 Repository <LinkIcon icon={faExternalLinkAlt} />
               </CardLink>
               <TechStack>

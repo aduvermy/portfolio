@@ -112,7 +112,7 @@ export const Header = () => {
             <SocialLink href="https://github.com/aduvermy" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faGithub} />
             </SocialLink>
-            <SocialLink href="https://www.linkedin.com/in/Arnaud-duvermy" target="_blank" rel="noopener noreferrer">
+            <SocialLink href="https://www.linkedin.com/in/arnaud-duvermy-b49248132/" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faLinkedin} />
             </SocialLink>
           </SocialLinks>

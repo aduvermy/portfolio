@@ -107,7 +107,7 @@ export const Header = () => {
           <MenuItem to="/projects">Projects</MenuItem>
           <MenuItem to="/publications">Publications</MenuItem>
           <MenuItem to="/education">Education</MenuItem>
-          <MenuItem to="/recipes">Recipes</MenuItem>
+          {/* <MenuItem to="/recipes">Recipes</MenuItem> */}
           <SocialLinks>
             <SocialLink href="https://github.com/aduvermy" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faGithub} />

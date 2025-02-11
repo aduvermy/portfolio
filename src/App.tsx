@@ -10,7 +10,7 @@ import { Experience } from './pages/Experience';
 import { Projects } from './pages/Projects';
 import { Publications } from './pages/Publications';
 import { Education } from './pages/Education';
-import { Recipes } from './pages/Recipes';
+// import { Recipes } from './pages/Recipes';
 
 function App() {
   return (
@@ -24,7 +24,7 @@ function App() {
             <Route path="/projects" element={<Projects />} />
             <Route path="/publications" element={<Publications />} />
             <Route path="/education" element={<Education />} />
-            <Route path="/recipes" element={<Recipes />} />
+            {/* <Route path="/recipes" element={<Recipes />} /> */}
           </Routes>
         </Layout>
       </Router>

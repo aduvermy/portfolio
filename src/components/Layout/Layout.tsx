@@ -9,6 +9,15 @@ const Main = styled.main`
   @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
     padding: ${({ theme }) => `calc(${theme.spacing.xxl} * 1.5) ${theme.spacing.md}`};
   }
+
+  section {
+    padding-top: ${({ theme }) => theme.spacing.xxl};
+    margin-bottom: ${({ theme }) => theme.spacing.xxl};
+  }
+
+  section:first-child {
+    padding-top: 0;
+  }
 `;
 
 const Container = styled.div`

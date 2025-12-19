@@ -44,6 +44,23 @@ export const Publications = () => {
 
       <Section>
         <PublicationCard>
+          <CardTitle>Towards a Library for the Analysis of Temporal Sequences</CardTitle>
+          <CardContent>
+            <Authors>
+              Thomas Guyet, <strong>Arnaud Duvermy</strong>
+            </Authors>
+            <Journal>Proceedings of AALTD, ECML Workshop on Advanced Analytics and Learning on Temporal Data, 2025, pp. 16</Journal>
+            <CardLink 
+              href="https://ecml-aaltd.github.io/aaltd2025/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              Read Publication <LinkIcon icon={faExternalLinkAlt} />
+            </CardLink>
+          </CardContent>
+        </PublicationCard>
+
+        <PublicationCard>
           <CardTitle>RNA helicase-dependent gene looping impacts messenger RNA processing</CardTitle>
           <CardContent>
             <Authors>

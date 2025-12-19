@@ -50,6 +50,30 @@ export const Projects = () => {
         <SectionTitle>Software Development</SectionTitle>
         <CardGrid>
           <ProjectCard>
+            <CardTitle>TanaT</CardTitle>
+            <CardSubtitle>Lead Developer - Extensible Python Library for Temporal Sequence Analysis</CardSubtitle>
+            <ProjectContent>
+              <p>
+                TanaT is an extensible Python library for temporal sequence analysis with a primary focus on patient care pathways.
+                TanaT supports multi-sequence trajectories combining three types of temporal data: states, intervals, and events.
+              </p>
+              <CardLink href="https://gitlab.inria.fr/tanat/tanat" target="_blank" rel="noopener noreferrer">
+                Repository <LinkIcon icon={faExternalLinkAlt} />
+              </CardLink>
+              <CardLink href="https://inria.hal.science/hal-05336370v1/document" target="_blank" rel="noopener noreferrer" style={{ marginLeft: '1rem' }}>
+                Publication <LinkIcon icon={faExternalLinkAlt} />
+              </CardLink>
+              <TechStack>
+                <Tag>Python</Tag>
+                <Tag>Machine Learning</Tag>
+                <Tag>Temporal Sequence</Tag>
+                <Tag>Healthcare</Tag>
+                <Tag>Data Science</Tag>
+              </TechStack>
+            </ProjectContent>
+          </ProjectCard>
+
+          <ProjectCard>
             <CardTitle>HTRfit</CardTitle>
             <CardSubtitle>Statistical Framework for RNA-seq Analysis</CardSubtitle>
             <ProjectContent>
@@ -65,26 +89,6 @@ export const Projects = () => {
                 <Tag>Statistics</Tag>
                 <Tag>RNA-seq</Tag>
                 <Tag>Bioinformatics</Tag>
-              </TechStack>
-            </ProjectContent>
-          </ProjectCard>
-
-          <ProjectCard>
-            <CardTitle>TanaT</CardTitle>
-            <CardSubtitle>Temporal Analysis of Trajectories</CardSubtitle>
-            <ProjectContent>
-              <p>
-                A Python library designed to facilitate the creation of metrics and clustering on longitudinal medical data. 
-                Currently under development.
-              </p>
-              <CardLink href="https://gitlab.inria.fr/tanat/tanat" target="_blank" rel="noopener noreferrer">
-                Repository <LinkIcon icon={faExternalLinkAlt} />
-              </CardLink>
-              <TechStack>
-                <Tag>Python</Tag>
-                <Tag>Machine Learning</Tag>
-                <Tag>Temporal Sequence</Tag>
-                <Tag>Medical Data</Tag>
               </TechStack>
             </ProjectContent>
           </ProjectCard>

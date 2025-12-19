@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
@@ -23,11 +22,12 @@ const Nav = styled.nav`
   align-items: center;
 `;
 
-const Logo = styled(Link)`
+const Logo = styled.a`
   font-size: ${({ theme }) => theme.typography.fontSize.h3};
   font-weight: ${({ theme }) => theme.typography.fontWeight.bold};
   color: ${({ theme }) => theme.colors.primary};
   text-decoration: none;
+  cursor: pointer;
 `;
 
 const MenuButton = styled.button`
@@ -65,11 +65,12 @@ const Menu = styled.div<MenuProps>`
   }
 `;
 
-const MenuItem = styled(Link)`
+const MenuItem = styled.a`
   color: ${({ theme }) => theme.colors.text};
   text-decoration: none;
   font-weight: ${({ theme }) => theme.typography.fontWeight.medium};
   transition: color ${({ theme }) => theme.transitions.default};
+  cursor: pointer;
 
   &:hover {
     color: ${({ theme }) => theme.colors.primary};
@@ -91,23 +92,34 @@ const SocialLink = styled.a`
   }
 `;
 
+const scrollToSection = (id: string) => {
+  const element = document.getElementById(id);
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' });
+  }
+};
+
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const handleNavClick = (id: string) => {
+    scrollToSection(id);
+    setIsMenuOpen(false);
+  };
 
   return (
     <HeaderContainer>
       <Nav>
-        <Logo to="/">AD</Logo>
+        <Logo onClick={() => handleNavClick('about')}>AD</Logo>
         <MenuButton onClick={() => setIsMenuOpen(!isMenuOpen)}>
           <FontAwesomeIcon icon={isMenuOpen ? faTimes : faBars} />
         </MenuButton>
         <Menu $isOpen={isMenuOpen}>
-          <MenuItem to="/">About</MenuItem>
-          <MenuItem to="/experience">Experience</MenuItem>
-          <MenuItem to="/projects">Projects</MenuItem>
-          <MenuItem to="/publications">Publications</MenuItem>
-          <MenuItem to="/education">Education</MenuItem>
-          {/* <MenuItem to="/recipes">Recipes</MenuItem> */}
+          <MenuItem onClick={() => handleNavClick('about')}>About</MenuItem>
+          <MenuItem onClick={() => handleNavClick('experience')}>Experience</MenuItem>
+          <MenuItem onClick={() => handleNavClick('projects')}>Projects</MenuItem>
+          <MenuItem onClick={() => handleNavClick('publications')}>Publications</MenuItem>
+          <MenuItem onClick={() => handleNavClick('education')}>Education</MenuItem>
           <SocialLinks>
             <SocialLink href="https://github.com/aduvermy" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faGithub} />

@@ -45,17 +45,21 @@ export const Experience = () => {
 
       <Section>
         <ExperienceCard>
-          <CardTitle>Engineer - Python Library Development for Medical Research</CardTitle>
-          <CardSubtitle>AIStrosight (Inria), APHP</CardSubtitle>
-          <DateRange>June 2024 - December 2024</DateRange>
+          <CardTitle>Research Engineer - Lead Developer of TanaT</CardTitle>
+          <CardSubtitle>AIStrosight (Inria)</CardSubtitle>
+          <DateRange>June 2024 - Present</DateRange>
           <CardContent>
             <p>
-              Developed a flexible and scalable Python library for building metrics and clustering on longitudinal medical data, 
-              easily integrable with machine learning tools for advanced predictive analysis.
+              Lead developer of TanaT, an extensible Python library for temporal sequence analysis focused on patient care pathways.
+              The library supports multi-sequence trajectories combining states, intervals, and events, enabling comprehensive multidimensional temporal pattern discovery.
             </p>
             <p>
               Project: <CardLink href="https://gitlab.inria.fr/tanat/tanat" target="_blank" rel="noopener noreferrer">
                 TanaT <LinkIcon icon={faExternalLinkAlt} />
+              </CardLink>
+              {' | '}
+              <CardLink href="https://inria.hal.science/hal-05336370v1/document" target="_blank" rel="noopener noreferrer">
+                Publication <LinkIcon icon={faExternalLinkAlt} />
               </CardLink>
             </p>
           </CardContent>
@@ -64,15 +68,15 @@ export const Experience = () => {
         <ExperienceCard>
           <CardTitle>CNRS Engineer - Data Science & Bioinformatics</CardTitle>
           <CardSubtitle>LBMC, Lesaffre</CardSubtitle>
-          <DateRange>January 2021 - June 2024</DateRange>
+          <DateRange>January 2022 - June 2024</DateRange>
           <CardContent>
             <BulletList>
               <li>
-                <strong>Data Science (60%):</strong> Developed haploid strain detection algorithms using random forest with NGS data. 
+                <strong>Data Science (60%):</strong> Developed haploid strain detection algorithms using random forest with NGS data.
                 Created Nextflow pipelines for metagenomics and transcriptomics, integrated with custom API and Cloud storage.
               </li>
               <li>
-                <strong>Research (40%):</strong> Developed HTRfit, a statistical framework for simulating and analyzing high-throughput 
+                <strong>Research (40%):</strong> Developed HTRfit, a statistical framework for simulating and analyzing high-throughput
                 RNAseq data with fixed, mixed, and interaction effects.
                 (<CardLink href="https://hal.science/hal-04874914" target="_blank" rel="noopener noreferrer">
                   Publication <LinkIcon icon={faExternalLinkAlt} />

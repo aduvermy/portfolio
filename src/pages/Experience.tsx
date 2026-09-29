@@ -45,16 +45,43 @@ export const Experience = () => {
 
       <Section>
         <ExperienceCard>
+          <CardTitle>Engineer/Developer - Health Data & Systems</CardTitle>
+          <CardSubtitle>Inria - PEPR Santé Numérique</CardSubtitle>
+          <DateRange>September 2026 - Present</DateRange>
+          <CardContent>
+            <p>
+              Supporting research teams across PEPR Santé Numérique associated teams (Inserm, 
+              Inria, CNRS, ...).
+            </p>
+            <BulletList>
+              <li>
+                <strong>Software delivery:</strong> Help research teams design and deliver software for healthcare challenges.
+              </li>
+              <li>
+                <strong>Open-source & sovereignty:</strong> Promote and implement open-source, sovereign tools, and 
+                reproducible science practices.
+              </li>
+              <li>
+                <strong>Architecture:</strong> Design custom architectures adapted to health data systems.
+              </li>
+              <li>
+                <strong>Training:</strong> Support the setup of training around the healthcare software offering.
+              </li>
+            </BulletList>
+          </CardContent>
+        </ExperienceCard>
+
+        <ExperienceCard>
           <CardTitle>Research Engineer - Lead Developer of TanaT</CardTitle>
           <CardSubtitle>AIStrosight (Inria)</CardSubtitle>
-          <DateRange>June 2024 - Present</DateRange>
+          <DateRange>June 2024 - June 2026</DateRange>
           <CardContent>
             <p>
               Lead developer of TanaT, an extensible Python library for temporal sequence analysis focused on patient care pathways.
               The library supports multi-sequence trajectories combining states, intervals, and events, enabling comprehensive multidimensional temporal pattern discovery.
             </p>
             <p>
-              Project: <CardLink href="https://gitlab.inria.fr/tanat/tanat" target="_blank" rel="noopener noreferrer">
+              Project: <CardLink href="https://github.com/TanaT-Lab/TanaT" target="_blank" rel="noopener noreferrer">
                 TanaT <LinkIcon icon={faExternalLinkAlt} />
               </CardLink>
               {' | '}

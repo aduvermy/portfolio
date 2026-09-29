@@ -60,8 +60,16 @@ const SocialLink = styled.a`
 
 const SkillsGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: ${({ theme }) => theme.spacing.md};
+
+  @media (max-width: 900px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 560px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 const SkillCategory = styled.div`
@@ -91,10 +99,9 @@ export const About = () => {
       <ProfileSection>
         <ProfileImage src={images.profile} alt="Arnaud Duvermy" />
         <Name>Arnaud Duvermy</Name>
-        <Title>Research Engineer · Python Developer</Title>
+        <Title>Engineer/Developer · Health Data & Systems</Title>
         <Tagline>
-          Building tools for temporal data analysis. Currently leading the development of TanaT at Inria, 
-          an open-source library for patient care pathway analysis.
+          Supporting research teams with software development, technical synergies, open-source solutions, and training on healthcare software.
         </Tagline>
         <SocialLinks>
           <SocialLink href="https://github.com/aduvermy" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
@@ -114,7 +121,7 @@ export const About = () => {
         <Card>
           <SectionContent>
             <p>
-              I hold a Master's degree in Bioinformatics from Université Claude Bernard Lyon 1 (2022). 
+              I hold a Master's degree in Bioinformatics from Université Claude Bernard Lyon 1. 
               My background combines software engineering with data science, focused on developing 
               analysis tools and processing pipelines for complex datasets.
             </p>
@@ -123,8 +130,26 @@ export const About = () => {
               <CardLink href="https://www.rhone-auvergne.cnrs.fr/fr/cnrsinfo/accelerer-linnovation-dans-le-domaine-de-la-fermentation" target="_blank" rel="noopener noreferrer">
                 LBMC/Lesaffre
               </CardLink>
-              , where I developed detection algorithms and bioinformatics pipelines, I joined the AIStrosight team at Inria in 2024 
-              as lead developer of TanaT, a Python library for temporal sequence analysis.
+              , where I led the development of{' '}
+              <CardLink href="https://hal.science/hal-04874914" target="_blank" rel="noopener noreferrer">
+                HTRfit
+              </CardLink>
+              , a statistical framework for high-throughput RNA-seq analysis, 
+              and built detection algorithms and bioinformatics pipelines. I joined Inria in 2024 as lead developer 
+              of{' '}
+              <CardLink href="https://github.com/TanaT-Lab/TanaT" target="_blank" rel="noopener noreferrer">
+                TanaT
+              </CardLink>
+              , a Python library for temporal sequence analysis.
+            </p>
+            <p>
+              Since September 2026, I work at Inria within the{' '}
+              <CardLink href="https://pg-numsante.gitlabpages.inria.fr/" target="_blank" rel="noopener noreferrer">
+                PEPR Santé Numérique
+              </CardLink>
+              , supporting research teams across the PEPR ecosystem (Inserm, Inria, CNRS, and beyond). 
+              My scope focuses on software development, technical synergies, reproducible science, and the 
+              rollout of training for healthcare software.
             </p>
           </SectionContent>
         </Card>
@@ -136,19 +161,27 @@ export const About = () => {
           <SkillsGrid>
             <SkillCategory>
               <SkillLabel>Languages</SkillLabel>
-              <SkillItems>Python, R, TypeScript</SkillItems>
+              <SkillItems>Python, TypeScript, R, Bash</SkillItems>
             </SkillCategory>
             <SkillCategory>
-              <SkillLabel>Data Science</SkillLabel>
-              <SkillItems>Machine Learning, Statistics, Bioinformatics</SkillItems>
+              <SkillLabel>Software Engineering</SkillLabel>
+              <SkillItems>Open-Source, Architecture, Reproducibility, Testing, Git, CI/CD</SkillItems>
             </SkillCategory>
             <SkillCategory>
-              <SkillLabel>Tools</SkillLabel>
-              <SkillItems>Git, Docker, Nextflow, Snakemake</SkillItems>
+              <SkillLabel>DevOps & Infrastructure</SkillLabel>
+              <SkillItems>Docker, Ansible, Linux, Guix</SkillItems>
             </SkillCategory>
             <SkillCategory>
-              <SkillLabel>Web</SkillLabel>
-              <SkillItems>React, Node.js</SkillItems>
+              <SkillLabel>AI & Machine Learning</SkillLabel>
+              <SkillItems>PyTorch, Hugging Face, Scikit-learn, Transformers, NLP</SkillItems>
+            </SkillCategory>
+            <SkillCategory>
+              <SkillLabel>Data & Health</SkillLabel>
+              <SkillItems>Health Data, Care Pathways, Bioinformatics, Statistics</SkillItems>
+            </SkillCategory>
+            <SkillCategory>
+              <SkillLabel>Web & Visualization</SkillLabel>
+              <SkillItems>React, Dashboards, Data Visualization</SkillItems>
             </SkillCategory>
           </SkillsGrid>
         </Card>

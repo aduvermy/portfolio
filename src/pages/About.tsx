@@ -143,13 +143,14 @@ export const About = () => {
               , a Python library for temporal sequence analysis.
             </p>
             <p>
-              Since September 2026, I work at Inria within the{' '}
+              Since September 2026, I work with Inria's{' '}
               <CardLink href="https://pg-numsante.gitlabpages.inria.fr/" target="_blank" rel="noopener noreferrer">
-                PEPR Santé Numérique
+                Programme Numérique en Santé
               </CardLink>
-              , supporting research teams across the PEPR ecosystem (Inserm, Inria, CNRS, and beyond). 
-              My scope focuses on software development, technical synergies, reproducible science, and the 
-              rollout of training for healthcare software.
+              , supporting research teams in digital health. My scope focuses on software development, 
+              technical synergies, reproducible science, and the rollout of training for healthcare software. 
+              I also work on automating research processes through automated, secure systems where AI agents 
+              take on part of the work within clear specifications.
             </p>
           </SectionContent>
         </Card>

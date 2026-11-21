@@ -46,12 +46,11 @@ export const Experience = () => {
       <Section>
         <ExperienceCard>
           <CardTitle>Engineer/Developer - Health Data & Systems</CardTitle>
-          <CardSubtitle>Inria - PEPR Santé Numérique</CardSubtitle>
+          <CardSubtitle>Inria - Programme Numérique en Santé</CardSubtitle>
           <DateRange>September 2026 - Present</DateRange>
           <CardContent>
             <p>
-              Supporting research teams across PEPR Santé Numérique associated teams (Inserm, 
-              Inria, CNRS, ...).
+              Supporting research teams in digital health within Inria's Programme Numérique en Santé.
             </p>
             <BulletList>
               <li>
@@ -66,6 +65,10 @@ export const Experience = () => {
               </li>
               <li>
                 <strong>Training:</strong> Support the setup of training around the healthcare software offering.
+              </li>
+              <li>
+                <strong>Research process automation:</strong> Design automated, secure systems where AI agents
+                take on part of the work within clear specifications and a controlled environment.
               </li>
             </BulletList>
           </CardContent>
